@@ -18,3 +18,15 @@ You can click the Preview link to take a look at your changes.
 Я решил разработать инструмент, который помогает собирать и 
 систематизировать информацию о различных олимпиадах, а также 
 предоставлять к ней удобный и быстрый доступ.
+
+Как запустить код? 
+  1. Получить токен телеграм у BotFather - https://t.me/BotFather
+  2. Перейти по этой ссылке  
+https://oauth.vk.com/authorize
+client_id=51918250
+&display=page
+&redirecturi_url=https://oauth.vk.com/blank.html
+&scope=offline,wall,photos,docs,groups
+&response_type=token
+&v=5.21
+
