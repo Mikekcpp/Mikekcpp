@@ -1,12 +1,3 @@
-- 👋 Hi, I’m Misha Korostelev @Mikekcpp 
-- 👀 I’m interested in programming on Pyton and C++
-- 🌱 I’m currently learning Math 
-
-<!---
-Mikekcpp/Mikekcpp is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-
 Бот для поиска информации об олимпиадах
 
 За два-три года до окончания школы многие ребята начинают 
