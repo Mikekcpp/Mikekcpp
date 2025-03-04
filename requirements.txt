@@ -1,0 +1,5 @@
+aiogram.types
+aiogram
+aiohttp
+logging
+Flask

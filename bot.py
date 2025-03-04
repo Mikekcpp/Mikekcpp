@@ -2,7 +2,7 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from aiogram import Bot, Dispatcher, types, executor
 import aiohttp, logging, re
-
+from os import environ
 
 
 # Настройка логирования 
@@ -12,12 +12,13 @@ logging.basicConfig(format=u'%(filename)s[LINE:%(lineno)d]# %(levelname)-8s [%(a
 
 
 # Ваши токены # Создаем объекты API для работы с Telegram
-TELEGRAM_TOKEN = 'токен телеграм'
+TELEGRAM_TOKEN = "7103211094:AAHgYoIFfFWyIeuFJ8CiCT60sDsbD1-ztoY"
 bot = Bot(token=TELEGRAM_TOKEN)
 dp = Dispatcher(bot)
 VERSION = "5.199"
 kol_post = 200
-TOKEN_USER = "токен из вк"
+TOKEN_USER = "vk1.a.xsTUS95IXI_Ep4SAfyE2a3ydurcMTyaWq4ksnNSN8h3HMeGQI7Tt3fS4h2uWKLDD83K-weZCu9ZbPDnTdlP7EB0qndj1vGy80M5fB__zwU77Fx7bmgPl84RNihQzf1hjkm7r-eaJLZpSVfxpzbNANyz9A3YyL86ZUsDv9RmrBf7U7qLUG0QOnQXNYFdDv-x-YTLKzE25EFwNr4HYfiQ1Bw"
+
 
 # Словарь с темами для выбора 
 TOPICS = {
@@ -118,3 +119,4 @@ async def vkpost(community_id, current_topic):
 # Запуск бота
 if __name__ == '__main__':
     executor.start_polling(dp)
+    bot.set_webhook("https://{}.glitch.me/{}".format(environ['PROJECT_NAME'], environ[TELEGRAM_TOKEN]))
